@@ -1,0 +1,63 @@
+/* Подключение шрифтов DIN 2014 */
+@import "./fonts/stylesheet.css";
+
+/* CSS-переменные для шрифтов */
+:root {
+  --font-din: "DIN 2014", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Максимальная ширина контейнера */
+  --container-max-width: 1416px;
+}
+
+/* Установка DIN 2014 как основного шрифта */
+body {
+  font-family: var(--font-din);
+}
+
+/* Контейнер с максимальной шириной 1416px */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* CSS-классы для шрифтов */
+.font-din {
+  font-family: var(--font-din);
+}
+
+.font-extralight {
+  font-weight: var(--font-weight-extralight);
+}
+
+.font-light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
