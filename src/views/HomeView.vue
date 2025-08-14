@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import SwiperExample from "../components/SwiperExample.vue";
 import ThumbSlider from "../components/ThumbSlider.vue";
 import ProductCard from "../components/ProductCard.vue";
 import ProductHead from "../components/ProductHead.vue";
@@ -10,14 +9,19 @@ import CharactersColumn from "@/components/CharactersColumn.vue";
 import Faqs from "@/components/Faqs.vue";
 import ProductDescription from "@/components/ProductDescription.vue";
 import Services from "@/components/Services.vue";
+import PopularBlocks from "@/components/PopularBlocks.vue";
+import ProductBadges from "@/components/ProductBadges.vue";
+import SectionTitle from "@/components/SectionTitle.vue";
+import NavigationTabs from "@/components/NavigationTabs.vue";
+import ModalsServices from "@/components/modals/ModalsServices.vue";
 
 // Компонент для ссылок
-const LinkComponent = {
+const LinkComponent = ref({
   template: '<a href="#" class="text-blue-500 hover:underline"><slot /></a>',
-};
+}) as any;
 
 // Данные для характеристик
-const sections = ref([
+const sections = ref<any[]>([
   {
     title: "Основные",
     characters: [
@@ -98,12 +102,12 @@ const sections = ref([
 <template>
   <div>
     <ProductHead class="!mb-6" />
-    <div class="container mx-auto flex gap-40 !mb-[140px]">
+    <div class="container mx-auto flex lg:gap-10 lg:!mb-[140px] !mb-6 flex-wrap  gap-6 justify-between">
       <ThumbSlider />
-      <div class="flex-grow w-full">
-        <ProductCardHead class="mb-6" />
-        <ProductCard class="w-full mb-5" />
-        <div class="flex gap-2">
+      <div class="flex-grow max-lg:w-full lg:max-w-[479px]">
+        <ProductCardHead class="mb-6 lg:block hidden" />
+        <ProductCard class="w-full mb-6" />
+        <div class="lg:flex gap-2 hidden">
           <Button variant="outlineYellow" size="lg" full-width icon="discount">
             Хочу скидку
           </Button>
@@ -111,28 +115,26 @@ const sections = ref([
             Доставка и возврат
           </Button>
         </div>
+        <ProductBadges class="lg:hidden flex"/>
       </div>
     </div>
     <div class="container">
-      <ul class="flex gap-x-10 text-2xl mb-[60px]">
-        <li><a href="#">Характеристики</a></li>
-        <li><a href="#">Описание</a></li>
-        <li><a href="#">Популярные запросы</a></li>
-        <li><a href="#">Вопрос/Ответ</a></li>
-        <li><a href="#">Отзывы</a></li>
-      </ul>
+      <NavigationTabs class="lg:mb-[60px] mb-5" />
     </div>
     <div class="container">
+      <SectionTitle title="Характеристики"/>
       <CharactersColumn
         :sections="sections"
-        class="flex gap-y-12 gap-x-[150px] flex-wrap flex-col max-h-[750px]"
+        class="flex lg:gap-y-12 lg:gap-x-[150px] flex-wrap flex-col max-h-[750px] lg:mb-20 mb-6.5 gap-3 max-lg:w-full max-lg:max-h-full"
       />
-      <ProductDescription class="mb-20" />
-      <Services />
+      <ProductDescription class="lg:mb-10 mb-5" />
+      <Services class="lg:mb-20 mb-5" />
+      <PopularBlocks class="lg:mb-20 mb-5" />
     </div>
     <div class="container mt-12">
-      <h2 class="text-2xl font-semibold mb-6">Вопрос/Ответ</h2>
+      <SectionTitle title="Вопрос/Ответ"/>
       <Faqs />
     </div>
+    <ModalsServices/>
   </div>
 </template>

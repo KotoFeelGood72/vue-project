@@ -1,6 +1,6 @@
 <template>
-  <div class="flex gap-[100px]">
-    <div class="w-[120px] max-h-[530px] flex-shrink-0 relative">
+  <div class="flex gap-[100px] flex-wrap max-lg:w-full ">
+    <div class="w-[120px] lg:max-h-[530px]  flex-shrink-0 relative lg:!block !hidden">
       <button
         v-if="!isThumbsBeginning"
         @click="navigateThumbs('prev')"
@@ -33,12 +33,16 @@
         <IconChevron class="w-4 h-4" />
       </button>
     </div>
-    <div class="flex-1 max-w-[550px] h-full">
+    <div class="flex-1 lg:max-w-[550px] h-full max-lg:flex-grow max-w-full max-lg:relative">
       <swiper
         :modules="[SwiperThumbs, SwiperNavigation, SwiperPagination]"
         :thumbs="{ swiper: thumbsSwiper }"
-        :space-between="0"
-        class="relative h-full"
+        :pagination="{
+          clickable: true,
+          el: '.mobile-pagination',
+        }"
+        :space-between="20"
+        class="relative h-full max-lg:flex-grow"
         @swiper="setMainSwiper"
         @slide-change="handleSlideChange"
       >
@@ -47,9 +51,10 @@
           :key="index"
           class="h-full flex items-center justify-center"
         >
-          <img :src="slide.image" :alt="slide.title" class="w-full h-full object-cover" />
+          <img :src="slide.image" :alt="slide.title" class="w-full h-full object-cover max-lg:rounded-[10px]" />
         </swiper-slide>
       </swiper>
+      <div class="swiper-pagination mobile-pagination lg:hidden flex !absolute !-bottom-10 !left-1/2 !-translate-x-1/2 !z-10 !gap-3 justify-center"></div>
     </div>
   </div>
 </template>
@@ -156,4 +161,17 @@ const navigateThumbs = (direction: "prev" | "next") => {
 };
 </script>
 
-<style scoped></style>
+<style >
+
+
+
+.mobile-pagination .swiper-pagination-bullet {
+  background: #E5EAEF!important;
+  width: 4px!important;
+  height: 4px!important;
+}
+
+.mobile-pagination .swiper-pagination-bullet-active {
+  background: #FBE843!important;
+}
+</style>

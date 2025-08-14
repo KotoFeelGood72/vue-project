@@ -1,20 +1,20 @@
 <template>
-  <div class="space-y-10">
+  <div class="lg:space-y-10 space-y-5">
     <div v-for="(faq, index) in faqs" :key="index" class="">
       <button
         @click="toggleFaq(index)"
         class="w-full flex justify-between items-center cursor-pointer"
       >
-        <h3 class="text-xl">
+        <h3 class="lg:text-xl text-xs max-lg:font-semibold max-lg:text-left">
           {{ faq.question }}
         </h3>
         <div class="flex-shrink-0">
-          <IconPlus v-if="!faq.isOpen" class="w-5 h-5 text-gray-500" />
-          <IconMinus v-else class="w-5 h-5 text-gray-500" />
+          <IconPlus v-if="!faq.isOpen" class="lg:w-5 lg:h-5 w-3 h-3 text-gray-500" />
+          <IconMinus v-else class="lg:w-5 lg:h-5 w-3 h-3 text-gray-500" />
         </div>
       </button>
 
-      <div v-show="faq.isOpen" class="mt-3 leading-relaxed">
+      <div v-show="faq.isOpen" class="mt-3 leading-relaxed max-lg:text-xs max-lg:leading-normal ">
         <p v-html="faq.answer"></p>
       </div>
     </div>

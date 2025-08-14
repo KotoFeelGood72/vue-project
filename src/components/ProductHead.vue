@@ -1,11 +1,13 @@
 <template>
   <div class="container mx-auto">
-    <div class="flex gap-10">
+    <div class="flex lg:gap-10 flex-wrap gap-3">
       <div class="">
-        <h1 class="lg:text-4xl font-light text-[#011E34]">{{ title }}</h1>
+        <h1 class="lg:text-4xl lg:font-light text-[#011E34] text-lg font-normal">{{ title }}</h1>
       </div>
 
-      <div class="flex items-center gap-5">
+      <div class="flex items-center gap-5 max-lg:justify-between max-lg:w-full">
+        <div class="flex items-center max-lg:gap-2">
+        
         <div class="stars">
           <IconStar
             v-for="star in 5"
@@ -18,20 +20,24 @@
 
         <div class="flex items-center mt-1 gap-1 text-[#486AD9]">
           <div class="flex items-center justify-center">
-            <IconReviews class="" />
+            <IconReviews class="max-lg:w-3 max-lg:h-3" />
           </div>
-          <div class="-mt-0.5 mr-2">{{ reviewsCount }}</div>
-          <div class="-mt-0.5">Отзывы</div>
+          <div class="lg:-mt-0.5 lg:mr-2 max-lg:text-xs mr-1">{{ reviewsCount }}</div>
+          <div class="lg:-mt-0.5 max-lg:text-xs">Отзывы</div>
         </div>
+        </div>
+
+        <ProductCardHead class="lg:hidden block" :visibleIcons="true" />
       </div>
     </div>
-    <div class="text-[#011E34] font-light">Код товара: {{ productCode }}</div>
+    <div class="text-[#011E34] font-light max-lg:hidden">Код товара: {{ productCode }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
 import IconStar from "./icons/IconStar.vue";
 import IconReviews from "./icons/IconReviews.vue";
+import ProductCardHead from "./ProductCardHead.vue";
 interface Props {
   title?: string;
   productCode?: string;

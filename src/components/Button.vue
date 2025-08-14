@@ -3,10 +3,10 @@
     :class="buttonClasses"
     :disabled="disabled"
     @click="$emit('click', $event)"
-    class="py-3.5 text-lg rounded-[10px] font-semibold cursor-pointer flex items-center gap-2 justify-center"
+    class="lg:py-3.5 py-2.5 text-lg lg:rounded-[10px] rounded-md font-semibold cursor-pointer flex items-center gap-2 justify-center"
   >
     <img v-if="icon" :src="`/images/${icon}.png`" />
-    <span v-if="$slots.default">
+    <span v-if="$slots.default" class="max-lg:text-xs">
       <slot />
     </span>
   </button>

@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-[#F8F8F8] p-8 rounded-[10px]">
-    <ul class="grid grid-cols-4 gap-x-20">
-      <li v-for="(item, index) in services" :key="index" class="text-center relative">
-        <img :src="item.img" class="mx-auto !mb-5" />
-        <h3 class="text-xl font-semibold mb-1.5">{{ item.title }}</h3>
-        <p>{{ item.description }}</p>
+  <div class="bg-[#F8F8F8] lg:p-8 rounded-[10px] p-2">
+    <ul class="grid lg:grid-cols-4 lg:gap-x-20 gap-px grid-cols-2 max-lg:bg-[#E8E8E8]">
+      <li v-for="(item, index) in services" :key="index" class="text-center relative bg-[#F8F8F8] max-lg:p-2">
+        <img :src="item.img" class="mx-auto lg:!mb-5 mb-2  max-lg:w-[50px] " />
+        <h3 class="lg:text-xl font-semibold mb-1.5 text-[15px]">{{ item.title }}</h3>
+        <p class=" max-lg:text-xs">{{ item.description }}</p>
         <div
           v-if="index < services.length - 1"
-          class="absolute top-0 right-0 bottom-0 w-px bg-gray-300 transform translate-x-10"
+          class="absolute top-0 right-0 bottom-0 w-px bg-gray-300 transform translate-x-10 max-lg:hidden"
         ></div>
       </li>
     </ul>
@@ -39,4 +39,9 @@ const services = [
 ];
 </script>
 
-<style scoped></style>
+<style scoped>
+
+li:nth-child(3) img {
+  max-width: 39px;
+}
+</style>
