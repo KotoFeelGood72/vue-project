@@ -1,0 +1,283 @@
+/* Подключение шрифтов DIN 2014 */
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-LightItalic.eot');
+    src: local('DIN 2014 Light Italic'), local('DIN2014-LightItalic'),
+        url('src/assets/fonts/DIN2014-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-LightItalic.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-Light.eot');
+    src: local('DIN 2014 Light'), local('DIN2014-Light'),
+        url('src/assets/fonts/DIN2014-Light.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-Light.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-ExtraBoldItalic.eot');
+    src: local('DIN 2014 ExtraBold Italic'), local('DIN2014-ExtraBoldItalic'),
+        url('src/assets/fonts/DIN2014-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-ExtraBoldItalic.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-ExtraLight.eot');
+    src: local('DIN 2014 ExtraLight'), local('DIN2014-ExtraLight'),
+        url('src/assets/fonts/DIN2014-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-ExtraLight.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-ExtraBold.eot');
+    src: local('DIN 2014 ExtraBold'), local('DIN2014-ExtraBold'),
+        url('src/assets/fonts/DIN2014-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-ExtraBold.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-ExtraLightItalic.eot');
+    src: local('DIN 2014 ExtraLight Italic'), local('DIN2014-ExtraLightItalic'),
+        url('src/assets/fonts/DIN2014-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-ExtraLightItalic.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-Regular.eot');
+    src: local('DIN 2014 Regular'), local('DIN2014-Regular'),
+        url('src/assets/fonts/DIN2014-Regular.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-Regular.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-Italic.eot');
+    src: local('DIN 2014 Italic'), local('DIN2014-Italic'),
+        url('src/assets/fonts/DIN2014-Italic.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-Italic.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-Bold.eot');
+    src: local('DIN 2014 Bold'), local('DIN2014-Bold'),
+        url('src/assets/fonts/DIN2014-Bold.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-Bold.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-BoldItalic.eot');
+    src: local('DIN 2014 Bold Italic'), local('DIN2014-BoldItalic'),
+        url('src/assets/fonts/DIN2014-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-BoldItalic.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-DemiBoldItalic.eot');
+    src: local('DIN 2014 DemiBold Italic'), local('DIN2014-DemiBoldItalic'),
+        url('src/assets/fonts/DIN2014-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-DemiBoldItalic.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('src/assets/fonts/DIN2014-DemiBold.eot');
+    src: local('DIN 2014 DemiBold'), local('DIN2014-DemiBold'),
+        url('src/assets/fonts/DIN2014-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('src/assets/fonts/DIN2014-DemiBold.woff') format('woff'),
+        url('src/assets/fonts/DIN2014-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* CSS-переменные для шрифтов */
+:root {
+  --font-din: "DIN 2014", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Максимальная ширина контейнера */
+  --container-max-width: 1416px;
+}
+
+/* Установка DIN 2014 как основного шрифта */
+body {
+  font-family: var(--font-din);
+}
+
+/* Контейнер с максимальной шириной 1416px */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* CSS-классы для шрифтов */
+.font-din {
+  font-family: var(--font-din);
+}
+
+.font-extralight {
+  font-weight: var(--font-weight-extralight);
+}
+
+.font-light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+
+/* Дополнительные стили */
+.shadow-custom {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Swiper стили */
+.mobile-pagination .swiper-pagination-bullet {
+  background: #E5EAEF!important;
+  width: 4px!important;
+  height: 4px!important;
+}
+
+.mobile-pagination .swiper-pagination-bullet-active {
+  background: #FBE843!important;
+}
+
+/* Модальное окно */
+.modal-main {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Анимация появления модального окна */
+.modal-enter-active,
+.modal-leave-active {
+  transition: all 0.3s ease;
+}
+
+.modal-enter-from {
+  opacity: 0;
+}
+
+.modal-enter-to {
+  opacity: 1;
+}
+
+.modal-leave-from {
+  opacity: 1;
+}
+
+.modal-leave-to {
+  opacity: 0;
+}
+
+/* Анимация для внутреннего контента модального окна */
+.modal-enter-active .modal-main,
+.modal-leave-active .modal-main {
+  transition: all 0.3s ease;
+}
+
+.modal-enter-from .modal-main {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.modal-enter-to .modal-main {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-leave-from .modal-main {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-leave-to .modal-main {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Скрытие скроллбара */
+[&::-webkit-scrollbar]:hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+[&::-webkit-scrollbar]:hidden::-webkit-scrollbar {
+  display: none;
+}
